@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="HTML5 Starter Theme - by inO">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- Bootstrap Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/slate/bootstrap.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <!-- container div -->
+        <div class="container">
+
+        <!-- Nav -->
+        <div class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-angellist"></i> Vinil APP</a>
+          </div>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#"><i class="fa fa-music"></i> Sobre</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-o"></i> Docs <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">jQuery 1.10.2</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Additional</li>
+                  <li><a href="#">Bootstrap + Font Awesome</a></li>
+                </ul>
+                <li><a href="#"><i class="fa fa-folder-o"></i> APP</a></li>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i> Google+</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><i class="fa fa-github"></i> Github</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>  
+
+
+          <!-- hello -->
+        <div class="jumbotron">
+          <h1><i class="fa fa-angellist"></i> Vinil APP</h1>
+          <p>Compartilhe sua coleção de vinil!</p>
+          <p><a class="btn btn-success btn-lg" role="button">Saiba mais!</a></p>
+        </div>
+
+        <div class="row"><!-- Row Album api -->
+          
+          <div class="col-md-6 col-md-offset-3"><!-- col Album api -->
+
+            <!-- Album api -->
+            <div class="panel-group" id="accordion"><!-- accordion -->
+              <div class="panel panel-default">
+
+                <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Last.fm API Rest test</a> <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+                  </h4>
+                </div>
+
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body form-horizontal">
+                    <!-- jquery rest api lastfm-->
+                  <h3>Last.fm API Rest test</h3>
+                  <h4>Clique em rodar para iniciar. Você escolherá o album e o artista para saber informações!</h4>
+                  <button type="button" class="btn btn-success" id="botaorodar" onclick="myFunctionRodar()">Rodar</button>
+                  <hr>
+                  <p class="lasf-fm-album-artist">O artista escolhido é  </p>
+                  <p class="lasf-fm-album-name">O album que você colocou é  </p>
+                  <p class="lasf-fm-album-listeners">Esse album tem esse número de ouvintes no last.fm:  </p>
+                  <p class="lasf-fm-album-playcount">Esse album já foi tocado no last.fm esse número de vezes: </p>
+                  <div class="lasf-fm-album-img">Imagem da capa: </div> 
+                  <hr class="nohr">
+                  <button type="button" class="btn btn-success" id="botaoresetar">Resetar</button>
+                  </div>
+                </div>
+
+              </div><!-- end col Album api -->
+            </div><!-- fecha div id accordion -->
+            <!-- fecha div album api -->
+
+          </div>
+          
+        </div><!-- end row Album api -->
+
+            <div class="row marketing">
+                <div class="col-lg-6">
+                    <h4>Colecione vinil!</h4>
+                    <p>Mostre sua coletanea de vinis para quem quiser.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Vá além!</h4>
+                    <p>Descubra novos vinis e monte sua lista de desejos!</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>in♥</p>
+            </div>
+
+          </div><!-- fecha div container -->
+
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Booststrap Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+         <!-- Root -->
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+
+    </body>
+</html>
