@@ -31,6 +31,8 @@
          $("img[src='"+data.album.image[4]["#text"]+"']").addClass("img-responsive");
          $("#botaoresetar").show();
          $(".nohr").show();
+         $('input[name=artistNameItem]').val('');
+         $('input[name=artistAlbumItem]').val('');
       });
   }
 
