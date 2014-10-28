@@ -76,7 +76,7 @@
         <div class="jumbotron">
           <h1><i class="fa fa-angellist"></i> Vinil APP</h1>
           <p>Compartilhe sua coleção de vinil!</p>
-          <p><a class="btn btn-success btn-lg" role="button">Saiba mais!</a></p>
+          <p><a class="btn btn-success btn-lg" role="button">Cadastre-se</a></p>
         </div>
 
         <div class="row"><!-- Row Album api -->
@@ -98,7 +98,11 @@
                     <!-- jquery rest api lastfm-->
                   <h3>Last.fm API Rest test</h3>
                   <h4>Clique em rodar para iniciar. Você escolherá o album e o artista para saber informações!</h4>
-                  <button type="button" class="btn btn-success" id="botaorodar" onclick="myFunctionRodar()">Rodar</button>
+                  <form name="checkListForm">
+                    <p>Artista: <input type="text" name="artistNameItem"/></p>
+                    <p>Album: <input type="text" name="artistAlbumItem"/></p>
+                  </form>
+                  <p><button type="button" class="btn btn-success" id="botaorodar" onclick="myFunctionRodar()">iniciar</button></p>
                   <hr>
                   <p class="lasf-fm-album-artist">O artista escolhido é  </p>
                   <p class="lasf-fm-album-name">O album que você colocou é  </p>
